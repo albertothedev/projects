@@ -3,13 +3,59 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
+      "env": [
+        "NEXT_PUBLIC_EMAIL_ACCOUNT",
+        "NEXT_PUBLIC_GITHUB_URL",
+        "NEXT_PUBLIC_LINKEDIN_URL",
+        "NEXT_PUBLIC_LOLDATA_SOURCE_URL",
+        "NEXT_PUBLIC_TASKOUT_SOURCE_URL",
+        "NEXT_PUBLIC_MINESWEEPER_SOURCE_URL",
+        "NEXT_PUBLIC_SNAKE_SOURCE_URL",
+        "NEXT_PUBLIC_LOLDATA_UI_URL",
+        "NEXT_PUBLIC_TASKOUT_UI_URL",
+        "NEXT_PUBLIC_MINESWEEPER_UI_URL",
+        "NEXT_PUBLIC_SNAKE_UI_URL"
+      ],
+      "inputs": [".env.local"],
       "outputs": ["dist/**", ".next/**"]
     },
+    "portfolio#build": {
+      "dependsOn": ["^build"],
+      "env": [
+        "NEXT_PUBLIC_EMAIL_ACCOUNT",
+        "NEXT_PUBLIC_GITHUB_URL",
+        "NEXT_PUBLIC_LINKEDIN_URL",
+        "NEXT_PUBLIC_LOLDATA_SOURCE_URL",
+        "NEXT_PUBLIC_TASKOUT_SOURCE_URL",
+        "NEXT_PUBLIC_MINESWEEPER_SOURCE_URL",
+        "NEXT_PUBLIC_SNAKE_SOURCE_URL",
+        "NEXT_PUBLIC_LOLDATA_UI_URL",
+        "NEXT_PUBLIC_TASKOUT_UI_URL",
+        "NEXT_PUBLIC_MINESWEEPER_UI_URL",
+        "NEXT_PUBLIC_SNAKE_UI_URL"
+      ],
+      "inputs": [".env.local"],
+      "outputs": [".next/**"]
+    },
     "lint": {
-      "outputs": []
+      "outputs": [],
+      "cache": false
     },
     "dev": {
       "cache": false
     }
-  }
+  },
+  "globalEnv": [
+    "NEXT_PUBLIC_EMAIL_ACCOUNT",
+    "NEXT_PUBLIC_GITHUB_URL",
+    "NEXT_PUBLIC_LINKEDIN_URL",
+    "NEXT_PUBLIC_LOLDATA_SOURCE_URL",
+    "NEXT_PUBLIC_TASKOUT_SOURCE_URL",
+    "NEXT_PUBLIC_MINESWEEPER_SOURCE_URL",
+    "NEXT_PUBLIC_SNAKE_SOURCE_URL",
+    "NEXT_PUBLIC_LOLDATA_UI_URL",
+    "NEXT_PUBLIC_TASKOUT_UI_URL",
+    "NEXT_PUBLIC_MINESWEEPER_UI_URL",
+    "NEXT_PUBLIC_SNAKE_UI_URL"
+  ]
 }

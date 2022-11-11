@@ -1,0 +1,247 @@
+.contact {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto 100px;
+  background: rgba(#fff, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31 38 135 / 37%);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(#fff, 0.18);
+  text-shadow: 0 2px 4px rgba(71 97 206 / 50%);
+  padding: 15px;
+  color: white;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__links {
+    display: flex;
+    font-size: 300%;
+
+    &__link {
+      color: white;
+
+      svg {
+        filter: drop-shadow(0 8px 20px rgba(31 38 135 / 60%));
+      }
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__separator {
+    font-style: italic;
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+
+    &::before,
+    &::after {
+      display: inline-block;
+      content: "";
+      border-top: 2px solid white;
+      width: 30%;
+      margin: 0 10px;
+      transform: translateY(-6px);
+      background: rgba(#fff, 0.25);
+      box-shadow: 0 8px 32px 0 rgba(31 38 135 / 37%);
+      backdrop-filter: blur(4px);
+      border-radius: 10px;
+      border: 1px solid rgba(#fff, 0.18);
+      text-shadow: 0 2px 4px rgba(71 97 206 / 50%);
+      padding: 0;
+      color: white;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+
+    &__name,
+    &__subject,
+    &__email {
+      display: flex;
+      flex-direction: column;
+
+      &__label {
+        margin-bottom: 5px;
+      }
+
+      &__input {
+        width: 300px;
+        height: 30px;
+        font-size: 2rem;
+        font-family: Lato, sans-serif;
+        background: white;
+        box-shadow: 0 8px 32px 0 rgba(31 38 135 / 37%);
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: none;
+        padding: 0 5px;
+        color: #615053;
+      }
+    }
+  }
+
+  &__message {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    &__label {
+      margin-bottom: 5px;
+    }
+
+    &__input {
+      font-size: 2rem;
+      font-family: Lato, sans-serif;
+      background: white;
+      box-shadow: 0 8px 32px 0 rgba(31 38 135 / 37%);
+      backdrop-filter: blur(4px);
+      border-radius: 10px;
+      border: none;
+      padding: 0 5px;
+      color: #615053;
+    }
+  }
+
+  &__submit {
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    min-width: 60px;
+    min-height: 30px;
+    background: white;
+    box-shadow: 0 8px 32px 0 rgba(31 38 135 / 37%);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: none;
+    padding: 0 5px;
+    color: $color-primary;
+    font: 2rem Lato, sans-serif;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 32px rgba(31 38 135 / 20%);
+    }
+  }
+
+  &__loading {
+    background: white;
+    border: none;
+    box-shadow: 0 8px 32px 0 rgba(31 38 135 / 37%);
+    border-radius: 10px;
+    padding: 0 5px;
+    min-width: 60px;
+    min-height: 30px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    width: 90%;
+
+    &__info {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 100%;
+      margin-bottom: 20px;
+      grid-gap: 20px;
+
+      &__name,
+      &__subject,
+      &__email {
+        width: 100%;
+
+        &__input {
+          width: 100%;
+        }
+      }
+    }
+
+    &__message {
+      min-width: 530px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 1.5rem;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+
+      &__name,
+      &__subject,
+      &__email {
+        &__input {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    &__message {
+      min-width: auto;
+      width: 100%;
+
+      &__input {
+        font-size: 1.5rem;
+      }
+    }
+
+    &__submit {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.lds-ring {
+  width: 60px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 4px 0;
+
+  div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    margin: auto;
+    border: 3px solid $color-primary;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: $color-primary transparent transparent transparent;
+
+    &:nth-child(1) {
+      animation-delay: -0.45s;
+    }
+
+    &:nth-child(2) {
+      animation-delay: -0.3s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: -0.15s;
+    }
+  }
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
