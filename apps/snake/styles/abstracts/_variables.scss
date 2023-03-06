@@ -1,0 +1,8 @@
+$drawing-color: #6b6100;
+$background-color: #bcbb00;
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

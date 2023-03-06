@@ -1,0 +1,35 @@
+{
+  "name": "projects",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "lint:stylelint": "turbo run lint:stylelint",
+    "lint:stylelint:fix": "turbo run lint:stylelint:fix",
+    "lint:eslint": "turbo run lint:eslint",
+    "lint:eslint:fix": "turbo run lint:eslint:fix",
+    "format": "turbo run format",
+    "format:fix": "turbo run format:fix",
+    "outdated": "npm-check-updates --deep",
+    "update": "npm-check-updates --interactive --format group --deep"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "workspace:*",
+    "npm-check-updates": "^16.7.10",
+    "stylelint-config-custom": "workspace:*",
+    "prettier": "latest",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
+  "packageManager": "pnpm@7.29.0"
+}

@@ -1,0 +1,20 @@
+@mixin upper($border-size) {
+  background-color: $regular-color !important;
+  border-left: $border-size solid $light-color !important;
+  border-top: $border-size solid $light-color !important;
+  border-right: $border-size solid $dark-color !important;
+  border-bottom: $border-size solid $dark-color !important;
+}
+
+@mixin lower($border-size) {
+  background-color: $regular-color !important;
+  border-left: $border-size solid $dark-color !important;
+  border-top: $border-size solid $dark-color !important;
+  border-right: $border-size solid $light-color !important;
+  border-bottom: $border-size solid $light-color !important;
+}
+
+@mixin pressed($border-size) {
+  border-left: $border-size solid $dark-color !important;
+  border-top: $border-size solid $dark-color !important;
+}

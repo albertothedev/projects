@@ -1,0 +1,97 @@
+.leaderboard {
+  font-size: 1rem;
+
+  &__title {
+    font-size: 3em;
+  }
+
+  &__rankings {
+    box-sizing: content-box;
+    border: 3em solid $drawing-color;
+    display: grid;
+    grid-template-rows: calc(10% - 15px) calc(10% - 15px) calc(70% - 15px) calc(
+        10% - 15px
+      );
+    aspect-ratio: 344 / 495;
+
+    &__buttons {
+      display: flex;
+      justify-content: center;
+
+      &__button {
+        color: inherit;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        border-bottom: 5px solid $drawing-color;
+        width: 25%;
+        padding: 0;
+        font-size: 2em;
+
+        &--active {
+          border-bottom: none !important;
+          padding-bottom: 5px;
+        }
+      }
+    }
+
+    &__header {
+      display: grid;
+      grid-template-columns: 20% 60% 20%;
+      font-size: 2em;
+      align-items: center;
+      padding: 0 0.5em;
+
+      &__score {
+        text-align: right;
+      }
+    }
+
+    &__players {
+      font-size: 2em;
+      overflow: auto;
+      padding: 0 0.5em;
+
+      &__player {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+
+        &:not(:last-child) {
+          padding-bottom: 0.25em;
+        }
+
+        &__score {
+          text-align: right;
+        }
+      }
+    }
+
+    &__playerBest {
+      font-size: 2em;
+      padding: 0 0.5em 0.5em;
+      display: flex;
+      align-self: flex-end;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    font-size: 0.7rem;
+
+    &__rankings {
+      grid-template-rows:
+        calc(10% - 10.5px) calc(10% - 10.5px) calc(70% - 10.5px)
+        calc(10% - 10.5px);
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    font-size: 0.5rem;
+
+    &__rankings {
+      grid-template-rows:
+        calc(10% - 7.5px) calc(10% - 7.5px) calc(70% - 7.5px)
+        calc(10% - 7.5px);
+    }
+  }
+}

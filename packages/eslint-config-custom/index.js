@@ -1,0 +1,46 @@
+module.exports = {
+  extends: [
+    "eslint:recommended",
+    "plugin:@next/next/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier",
+  ],
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
+  settings: {
+    react: {
+      version: "detect",
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".mts", ".cts", ".tsx", ".d.ts"],
+    },
+    "import/resolver": {
+      "eslint-import-resolver-node": {
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
+      "eslint-import-resolver-typescript": {
+        alwaysTryTypes: true,
+      },
+      typescript: {
+        project: ["apps/*/tsconfig.json"],
+      },
+    },
+  },
+  env: {
+    browser: true,
+    node: true,
+  },
+  rules: {
+    "@next/next/no-html-link-for-pages": ["warn", "pages/"],
+  },
+};

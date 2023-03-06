@@ -1,0 +1,137 @@
+.modal {
+  font-size: 2rem;
+  position: fixed;
+  background-color: rgba(0 0 0 / 50%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+
+  &__content {
+    position: absolute;
+    background-color: white;
+    padding: 15px;
+    color: black;
+    width: 900px;
+    border-radius: 10px;
+
+    &__howItWorks {
+      &__title {
+        color: $color-primary;
+        font-size: 1.5em;
+      }
+
+      &__preview {
+        width: 300px;
+        float: right;
+        margin-left: 20px;
+        background: rgba(#fff, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31 38 135 / 37%);
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(#fff, 0.18);
+        text-shadow: 0 2px 4px rgba(71 97 206 / 50%);
+        padding: 15px;
+        color: white;
+
+        &__image {
+          width: 100%;
+          height: 100%;
+        }
+
+        &__links {
+          display: flex;
+          justify-content: center;
+          margin-top: 10px;
+
+          &__link {
+            text-decoration: none;
+            height: 30px;
+            background-color: $color-secondary;
+            box-shadow: none;
+            backdrop-filter: blur(4px);
+            border-radius: 10px;
+            border: 1px solid rgba(#fff, 0.18);
+            text-shadow: 0 2px 4px rgba(71 97 206 / 50%);
+            padding: 0 5px;
+            color: white;
+
+            &:first-child {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+
+      &__description {
+        text-align: justify;
+        color: #615053;
+      }
+    }
+
+    &__close {
+      font-size: 40px;
+      background-color: initial;
+      border-radius: 50%;
+      border: none;
+      color: $color-primary;
+      display: none;
+
+      svg {
+        vertical-align: initial;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    &__content {
+      width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    overflow-y: auto;
+
+    &__content {
+      position: relative;
+
+      &__howItWorks {
+        display: flex;
+        flex-flow: column;
+
+        &__title {
+          order: 2;
+        }
+
+        &__preview {
+          // margin: auto;
+          width: auto;
+          float: initial;
+          margin-left: initial;
+          order: 1;
+          margin-bottom: 10px;
+
+          &__links {
+            &__link {
+              display: grid;
+              place-content: center;
+            }
+          }
+        }
+
+        &__description {
+          margin-bottom: 10px;
+          order: 3;
+        }
+      }
+
+      &__close {
+        display: flex;
+        margin: auto;
+      }
+    }
+  }
+}

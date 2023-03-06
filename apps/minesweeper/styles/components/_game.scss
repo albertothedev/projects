@@ -1,0 +1,138 @@
+.game {
+  font-size: 1rem;
+  margin: 0 2em;
+  @include upper(0.3em);
+
+  &--easy {
+    height: 36.4em;
+    width: 24.4em;
+  }
+
+  &--medium {
+    height: 53.2em;
+    width: 41.2em;
+  }
+
+  &--hard {
+    height: 53.2em;
+    width: 74.8em;
+  }
+
+  &__gameSelection {
+    text-align: center;
+    margin: 0.8em;
+
+    &__button {
+      font-size: 1.5em;
+      height: 2em;
+      width: calc(100% / 3);
+      padding: 0;
+      cursor: pointer;
+      font-weight: 500;
+      @include upper(0.2em);
+
+      &:active {
+        @include pressed(0.2em);
+      }
+
+      &--active {
+        @include lower(0.2em);
+      }
+    }
+  }
+
+  &__scoreboard {
+    height: 7.4em;
+    @include lower(0.3em);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.8em;
+    text-align: right;
+    font-family: Digital;
+
+    &__flags,
+    &__time {
+      font-size: 4em;
+      width: calc(7.5em / 4);
+      height: 1.25em;
+      @include lower(calc(0.3em / 4));
+
+      background-color: black !important;
+      color: red;
+      padding: 0 5px;
+    }
+
+    &__faceButton {
+      width: 5em;
+      height: 5em;
+      padding: 0;
+      border: none;
+
+      @include upper(0.3em);
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:active {
+        @include pressed(0.3em);
+      }
+
+      &__face {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  &__board {
+    margin: 0.8em;
+    @include lower(0.3em);
+
+    display: flex;
+    flex-wrap: wrap;
+
+    &__cell {
+      height: 2.4em;
+      width: 2.4em;
+      text-align: center;
+      position: relative;
+      border-left: 0.3em solid $light-color;
+      border-top: 0.3em solid $light-color;
+      border-right: 0.3em solid $dark-color;
+      border-bottom: 0.3em solid $dark-color;
+
+      &--flag {
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+      }
+
+      &--mine,
+      &--mineClicked {
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      &--number {
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+      }
+
+      &--open {
+        border: 0.1em solid #808080;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    margin: 10px 0;
+  }
+}

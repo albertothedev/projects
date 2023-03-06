@@ -1,0 +1,15 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": { "dependsOn": ["^build"], "outputs": ["dist/**", ".next/**"] },
+    "dev": { "cache": false },
+    "lint": { "outputs": [] },
+    "lint:fix": { "outputs": [] },
+    "lint:eslint": { "outputs": [] },
+    "lint:eslint:fix": { "outputs": [] },
+    "lint:stylelint": { "outputs": [] },
+    "lint:stylelint:fix": { "outputs": [] },
+    "format": { "outputs": [] },
+    "format:fix": { "outputs": [] }
+  }
+}

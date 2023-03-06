@@ -1,0 +1,75 @@
+.leaderboard {
+  font-size: 1rem;
+  width: 27.8em;
+  height: 36.4em;
+  @include upper(0.3em);
+
+  &__buttons {
+    font-size: 1.5em;
+    margin: calc(0.8em / 1.5);
+
+    &__button {
+      font-weight: 500;
+      width: calc(100% / 3);
+      margin: 0;
+      padding: 0;
+      height: 2em;
+      display: inline-block;
+      @include upper(0.2em);
+
+      cursor: pointer;
+
+      &:active {
+        @include pressed(0.2em);
+      }
+
+      &--active {
+        @include lower(0.2em);
+      }
+    }
+  }
+
+  &__loading {
+    font-size: 1.5em;
+    height: calc(30.6em / 1.5);
+    margin: calc(0.8em / 1.5);
+    @include lower(0.2em);
+
+    padding: 5px 10px 0;
+  }
+
+  &__rankings {
+    font-size: 1.5em;
+    height: calc(30.4em / 1.5);
+    margin: calc(0.8em / 1.5);
+    @include lower(0.2em);
+
+    overflow: auto;
+    padding: 0;
+
+    &__game {
+      @include lower(0.2em);
+
+      border-left: none !important;
+      border-right: none !important;
+      width: 100%;
+      box-sizing: border-box;
+      height: 2em;
+      display: flex;
+      cursor: default;
+      justify-content: space-between;
+      padding: 0 5px;
+
+      &:first-child {
+        border-top: none !important;
+        height: calc(2.6em / 1.5);
+      }
+
+      &__player,
+      &__time {
+        font-weight: 500;
+        line-height: 1.4;
+      }
+    }
+  }
+}

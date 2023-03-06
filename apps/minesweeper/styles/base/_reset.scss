@@ -1,0 +1,72 @@
+::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $regular-color;
+}
+
+::-webkit-scrollbar-thumb {
+  @include upper(3px);
+
+  &:active {
+    @include pressed(3px);
+  }
+
+  width: 20px;
+  height: 20px;
+  background-color: $regular-color;
+  z-index: 1;
+}
+
+::-webkit-scrollbar-button {
+  @include upper(3px);
+
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: $win95-ui-main-color;
+  image-rendering: pixelated;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &:active {
+    @include pressed(3px);
+  }
+
+  &:vertical:decrement {
+    background-image: url($win95-img-up-arrow);
+  }
+
+  &:vertical:increment {
+    background-image: url($win95-img-down-arrow);
+  }
+
+  &:vertical:increment:start {
+    display: none;
+  }
+
+  &:vertical:decrement:end {
+    display: none;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: transparent;
+}
+
+html {
+  line-height: 1.2;
+
+  body {
+    height: 100vh;
+    background-image: url("../../public/static/background.webp");
+  }
+}

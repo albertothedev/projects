@@ -1,0 +1,39 @@
+{
+  "name": "snake",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "pnpm run lint:eslint && pnpm run lint:stylelint",
+    "lint:fix": "pnpm run lint:eslint:fix && pnpm run lint:stylelint:fix",
+    "lint:stylelint": "stylelint '**/*.scss'",
+    "lint:stylelint:fix": "stylelint '**/*.scss' --fix",
+    "lint:eslint": "eslint .",
+    "lint:eslint:fix": "eslint --fix .",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write ."
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.3",
+    "@types/react-redux": "^7.1.24",
+    "axios": "^0.27.2",
+    "firebase-admin": "^11.0.0",
+    "next": "12.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0",
+    "sanitize.css": "^13.0.0",
+    "sass": "^1.54.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.0.6",
+    "@types/react": "18.0.15",
+    "@types/react-dom": "18.0.6",
+    "stylelint": "^14.14.0",
+    "tsconfig": "workspace:*",
+    "typescript": "4.7.4"
+  }
+}

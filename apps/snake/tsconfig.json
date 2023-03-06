@@ -1,0 +1,9 @@
+{
+  "extends": "tsconfig/nextjs.json",
+  // NOTE: https://stackoverflow.com/questions/58337089/extending-tsconfig-json-file-doesnt-seem-to-extend-anything
+  "compilerOptions": {
+    "baseUrl": "."
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}

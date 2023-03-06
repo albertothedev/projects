@@ -1,0 +1,10 @@
+@font-face {
+  font-family: PrStart;
+  src: url("../../public/static/PrStart.ttf");
+  font-display: swap;
+}
+
+html {
+  font-size: 10px;
+  font-family: PrStart;
+}

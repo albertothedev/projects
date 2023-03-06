@@ -1,0 +1,18 @@
+.modal {
+  font-size: 1rem;
+  background-color: $regular-color;
+  @include upper(0.3em);
+
+  padding: 0 5px;
+  height: 2.5em;
+  width: 77.4em;
+  margin: auto;
+  position: fixed;
+  margin-top: -3em;
+  text-align: center;
+
+  &__message {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+}
