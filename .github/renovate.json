@@ -4,5 +4,5 @@
   "prConcurrentLimit": 0,
   "prHourlyLimit": 0,
   "timezone": "CET",
-  "schedule": ["at 12am"]
+  "schedule": ["at 12am every day"]
 }
