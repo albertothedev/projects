@@ -41,7 +41,7 @@ importers:
       sass-loader: ^13.0.2
       stylelint: ^14.14.0
       tsconfig: workspace:*
-      typescript: 4.7.4
+      typescript: 4.9.5
     dependencies:
       '@reduxjs/toolkit': 1.9.0_k4ae6lp43ej6mezo3ztvx6pykq
       axios: 0.27.2
@@ -67,7 +67,7 @@ importers:
       '@types/react-redux': 7.1.24
       stylelint: 14.16.1
       tsconfig: link:../../packages/tsconfig
-      typescript: 4.7.4
+      typescript: 4.9.5
 
   apps/portfolio:
     specifiers:
@@ -88,7 +88,7 @@ importers:
       sass: ^1.54.0
       stylelint: ^14.14.0
       tsconfig: workspace:*
-      typescript: 4.7.4
+      typescript: 4.9.5
     dependencies:
       '@fortawesome/fontawesome-svg-core': 6.2.0
       '@fortawesome/free-brands-svg-icons': 6.2.0
@@ -108,7 +108,7 @@ importers:
       '@types/react-dom': 18.0.6
       stylelint: 14.16.1
       tsconfig: link:../../packages/tsconfig
-      typescript: 4.7.4
+      typescript: 4.9.5
 
   apps/snake:
     specifiers:
@@ -128,7 +128,7 @@ importers:
       sass: ^1.54.0
       stylelint: ^14.14.0
       tsconfig: workspace:*
-      typescript: 4.7.4
+      typescript: 4.9.5
     dependencies:
       '@reduxjs/toolkit': 1.9.0_k4ae6lp43ej6mezo3ztvx6pykq
       '@types/react-redux': 7.1.24
@@ -147,7 +147,7 @@ importers:
       '@types/react-dom': 18.0.6
       stylelint: 14.16.1
       tsconfig: link:../../packages/tsconfig
-      typescript: 4.7.4
+      typescript: 4.9.5
 
   packages/eslint-config-custom:
     specifiers:
@@ -5797,16 +5797,16 @@ packages:
       is-typedarray: 1.0.0
     dev: true
 
-  /typescript/4.7.4:
-    resolution: {integrity: sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==}
-    engines: {node: '>=4.2.0'}
-    hasBin: true
-    dev: true
-
   /typescript/4.8.4:
     resolution: {integrity: sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==}
     engines: {node: '>=4.2.0'}
     hasBin: true
+
+  /typescript/4.9.5:
+    resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
 
   /uc.micro/1.0.6:
     resolution: {integrity: sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==}
