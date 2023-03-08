@@ -21,7 +21,7 @@ importers:
       '@reduxjs/toolkit': ^1.8.3
       '@types/bcryptjs': ^2.4.2
       '@types/jsonwebtoken': ^8.5.8
-      '@types/node': 18.6.3
+      '@types/node': 18.14.6
       '@types/react': 18.0.15
       '@types/react-dom': 18.0.6
       '@types/react-redux': ^7.1.24
@@ -41,7 +41,7 @@ importers:
       sass-loader: ^13.0.2
       stylelint: ^14.14.0
       tsconfig: workspace:*
-      typescript: 4.7.4
+      typescript: 4.9.5
     dependencies:
       '@reduxjs/toolkit': 1.9.0_k4ae6lp43ej6mezo3ztvx6pykq
       axios: 0.27.2
@@ -61,13 +61,13 @@ importers:
     devDependencies:
       '@types/bcryptjs': 2.4.2
       '@types/jsonwebtoken': 8.5.9
-      '@types/node': 18.6.3
+      '@types/node': 18.14.6
       '@types/react': 18.0.15
       '@types/react-dom': 18.0.6
       '@types/react-redux': 7.1.24
       stylelint: 14.16.1
       tsconfig: link:../../packages/tsconfig
-      typescript: 4.7.4
+      typescript: 4.9.5
 
   apps/portfolio:
     specifiers:
@@ -75,7 +75,7 @@ importers:
       '@fortawesome/free-brands-svg-icons': ^6.1.2
       '@fortawesome/free-solid-svg-icons': ^6.1.2
       '@fortawesome/react-fontawesome': ^0.2.0
-      '@types/node': 18.6.3
+      '@types/node': 18.14.6
       '@types/nodemailer': ^6.4.4
       '@types/react': 18.0.15
       '@types/react-dom': 18.0.6
@@ -88,7 +88,7 @@ importers:
       sass: ^1.54.0
       stylelint: ^14.14.0
       tsconfig: workspace:*
-      typescript: 4.7.4
+      typescript: 4.9.5
     dependencies:
       '@fortawesome/fontawesome-svg-core': 6.2.0
       '@fortawesome/free-brands-svg-icons': 6.2.0
@@ -103,17 +103,17 @@ importers:
       sanitize.css: 13.0.0
       sass: 1.56.1
     devDependencies:
-      '@types/node': 18.6.3
+      '@types/node': 18.14.6
       '@types/react': 18.0.15
       '@types/react-dom': 18.0.6
       stylelint: 14.16.1
       tsconfig: link:../../packages/tsconfig
-      typescript: 4.7.4
+      typescript: 4.9.5
 
   apps/snake:
     specifiers:
       '@reduxjs/toolkit': ^1.8.3
-      '@types/node': 18.0.6
+      '@types/node': 18.14.6
       '@types/react': 18.0.15
       '@types/react-dom': 18.0.6
       '@types/react-redux': ^7.1.24
@@ -128,7 +128,7 @@ importers:
       sass: ^1.54.0
       stylelint: ^14.14.0
       tsconfig: workspace:*
-      typescript: 4.7.4
+      typescript: 4.9.5
     dependencies:
       '@reduxjs/toolkit': 1.9.0_k4ae6lp43ej6mezo3ztvx6pykq
       '@types/react-redux': 7.1.24
@@ -142,12 +142,12 @@ importers:
       sanitize.css: 13.0.0
       sass: 1.56.1
     devDependencies:
-      '@types/node': 18.0.6
+      '@types/node': 18.14.6
       '@types/react': 18.0.15
       '@types/react-dom': 18.0.6
       stylelint: 14.16.1
       tsconfig: link:../../packages/tsconfig
-      typescript: 4.7.4
+      typescript: 4.9.5
 
   packages/eslint-config-custom:
     specifiers:
@@ -162,7 +162,7 @@ importers:
       eslint-import-resolver-typescript: ^3.5.1
       eslint-plugin-import: ^2.26.0
       eslint-plugin-jsx-a11y: ^6.6.1
-      eslint-plugin-react: 7.31.8
+      eslint-plugin-react: 7.32.2
       eslint-plugin-react-hooks: ^4.6.0
       typescript: ^4.7.4
     dependencies:
@@ -177,7 +177,7 @@ importers:
       eslint-import-resolver-typescript: 3.5.2_hpmu7kn6tcn2vnxpfzvv33bxmy
       eslint-plugin-import: 2.26.0_ikhbatbdg7pjmlnrhxcioi2mri
       eslint-plugin-jsx-a11y: 6.6.1_eslint@7.32.0
-      eslint-plugin-react: 7.31.8_eslint@7.32.0
+      eslint-plugin-react: 7.32.2_eslint@7.32.0
       eslint-plugin-react-hooks: 4.6.0_eslint@7.32.0
     devDependencies:
       typescript: 4.8.4
@@ -466,7 +466,7 @@ packages:
     engines: {node: ^8.13.0 || >=10.10.0}
     dependencies:
       '@grpc/proto-loader': 0.7.3
-      '@types/node': 18.6.3
+      '@types/node': 18.14.6
     dev: false
     optional: true
 
@@ -876,13 +876,13 @@ packages:
     resolution: {integrity: sha512-ALYone6pm6QmwZoAgeyNksccT9Q4AWZQ6PvfwR37GT6r6FWUPguq6sUmNGSMV2Wr761oQoBxwGGa6DR5o1DC9g==}
     dependencies:
       '@types/connect': 3.4.35
-      '@types/node': 18.6.3
+      '@types/node': 18.14.6
     dev: false
 
   /@types/connect/3.4.35:
     resolution: {integrity: sha512-cdeYyv4KWoEgpBISTxWvqYsVy444DOqehiF3fM3ne10AmJ62RSyNkUnxMJXHQWRQQX2eR94m5y1IZyDwBjV9FQ==}
     dependencies:
-      '@types/node': 18.6.3
+      '@types/node': 18.14.6
     dev: false
 
   /@types/cookie/0.4.1:
@@ -892,7 +892,7 @@ packages:
   /@types/express-serve-static-core/4.17.31:
     resolution: {integrity: sha512-DxMhY+NAsTwMMFHBTtJFNp5qiHKJ7TeqOo23zVEM9alT1Ml27Q3xcTH0xwxn7Q0BbMcVEJOs/7aQtUWupUQN3Q==}
     dependencies:
-      '@types/node': 18.6.3
+      '@types/node': 18.14.6
       '@types/qs': 6.9.7
       '@types/range-parser': 1.2.4
     dev: false
@@ -927,7 +927,7 @@ packages:
   /@types/jsonwebtoken/8.5.9:
     resolution: {integrity: sha512-272FMnFGzAVMGtu9tkr29hRL6bZj4Zs1KZNeHLnKqAvp06tAIcarTMwOh8/8bz4FmKRcMxZhZNeUAQsNLoiPhg==}
     dependencies:
-      '@types/node': 18.6.3
+      '@types/node': 18.14.6
 
   /@types/linkify-it/3.0.2:
     resolution: {integrity: sha512-HZQYqbiFVWufzCwexrvh694SOim8z2d+xJl5UNamcvQFejLY/2YUtzXHYi3cHdI7PMlS8ejH2slRAOJQ32aNbA==}
@@ -963,17 +963,13 @@ packages:
     resolution: {integrity: sha512-3oJbGBUWuS6ahSnEq1eN2XrCyf4YsWI8OyCvo7c64zQJNplk3mO84t53o8lfTk+2ji59g5ycfc6qQ3fdHliHuA==}
     dev: false
 
-  /@types/node/18.0.6:
-    resolution: {integrity: sha512-/xUq6H2aQm261exT6iZTMifUySEt4GR5KX8eYyY+C4MSNPqSh9oNIP7tz2GLKTlFaiBbgZNxffoR3CVRG+cljw==}
-    dev: true
-
-  /@types/node/18.6.3:
-    resolution: {integrity: sha512-6qKpDtoaYLM+5+AFChLhHermMQxc3TOEFIDzrZLPRGHPrLEwqFkkT5Kx3ju05g6X7uDPazz3jHbKPX0KzCjntg==}
+  /@types/node/18.14.6:
+    resolution: {integrity: sha512-93+VvleD3mXwlLI/xASjw0FzKcwzl3OdTCzm1LaRfqgS21gfFtK3zDXM5Op9TeeMsJVOaJ2VRDpT9q4Y3d0AvA==}
 
   /@types/nodemailer/6.4.6:
     resolution: {integrity: sha512-pD6fL5GQtUKvD2WnPmg5bC2e8kWCAPDwMPmHe/ohQbW+Dy0EcHgZ2oCSuPlWNqk74LS5BVMig1SymQbFMPPK3w==}
     dependencies:
-      '@types/node': 18.6.3
+      '@types/node': 18.14.6
     dev: false
 
   /@types/normalize-package-data/2.4.1:
@@ -1031,7 +1027,7 @@ packages:
     resolution: {integrity: sha512-z5xyF6uh8CbjAu9760KDKsH2FcDxZ2tFCsA4HIMWE6IkiYMXfVoa+4f9KX+FN0ZLsaMw1WNG2ETLA6N+/YA+cg==}
     dependencies:
       '@types/mime': 3.0.1
-      '@types/node': 18.6.3
+      '@types/node': 18.14.6
     dev: false
 
   /@types/use-sync-external-store/0.0.3:
@@ -1360,6 +1356,16 @@ packages:
       define-properties: 1.1.4
       es-abstract: 1.20.4
       es-shim-unscopables: 1.0.0
+    dev: false
+
+  /array.prototype.tosorted/1.1.1:
+    resolution: {integrity: sha512-pZYPXPRl2PqWcsUs6LOMn+1f1532nEoPTYowBtqLwAW+W8vSVhkIGnmOX1t/UQjD6YGI0vcD2B1U7ZFGQH9jnQ==}
+    dependencies:
+      call-bind: 1.0.2
+      define-properties: 1.1.4
+      es-abstract: 1.20.4
+      es-shim-unscopables: 1.0.0
+      get-intrinsic: 1.1.3
     dev: false
 
   /arrify/1.0.1:
@@ -2101,7 +2107,7 @@ packages:
       eslint-import-resolver-typescript: 3.5.2_hpmu7kn6tcn2vnxpfzvv33bxmy
       eslint-plugin-import: 2.26.0_ikhbatbdg7pjmlnrhxcioi2mri
       eslint-plugin-jsx-a11y: 6.6.1_eslint@7.32.0
-      eslint-plugin-react: 7.31.8_eslint@7.32.0
+      eslint-plugin-react: 7.32.2_eslint@7.32.0
       eslint-plugin-react-hooks: 4.6.0_eslint@7.32.0
       typescript: 4.8.4
     transitivePeerDependencies:
@@ -2248,14 +2254,15 @@ packages:
       eslint: 7.32.0
     dev: false
 
-  /eslint-plugin-react/7.31.8_eslint@7.32.0:
-    resolution: {integrity: sha512-5lBTZmgQmARLLSYiwI71tiGVTLUuqXantZM6vlSY39OaDSV0M7+32K5DnLkmFrwTe+Ksz0ffuLUC91RUviVZfw==}
+  /eslint-plugin-react/7.32.2_eslint@7.32.0:
+    resolution: {integrity: sha512-t2fBMa+XzonrrNkyVirzKlvn5RXzzPwRHtMvLAtVZrt8oxgnTQaYbU6SXTOO1mwQgp1y5+toMSKInnzGr0Knqg==}
     engines: {node: '>=4'}
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
     dependencies:
       array-includes: 3.1.6
       array.prototype.flatmap: 1.3.1
+      array.prototype.tosorted: 1.1.1
       doctrine: 2.1.0
       eslint: 7.32.0
       estraverse: 5.3.0
@@ -2513,7 +2520,7 @@ packages:
       '@fastify/busboy': 1.1.0
       '@firebase/database-compat': 0.2.10
       '@firebase/database-types': 0.9.17
-      '@types/node': 18.6.3
+      '@types/node': 18.14.6
       jsonwebtoken: 8.5.1
       jwks-rsa: 2.1.5
       node-forge: 1.3.1
@@ -2534,7 +2541,7 @@ packages:
       '@fastify/busboy': 1.1.0
       '@firebase/database-compat': 0.2.10
       '@firebase/database-types': 0.9.17
-      '@types/node': 18.6.3
+      '@types/node': 18.14.6
       jsonwebtoken: 9.0.0
       jwks-rsa: 2.1.5
       node-forge: 1.3.1
@@ -4628,7 +4635,7 @@ packages:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 18.6.3
+      '@types/node': 18.14.6
       long: 5.2.1
     dev: false
     optional: true
@@ -5695,16 +5702,16 @@ packages:
       is-typedarray: 1.0.0
     dev: true
 
-  /typescript/4.7.4:
-    resolution: {integrity: sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==}
-    engines: {node: '>=4.2.0'}
-    hasBin: true
-    dev: true
-
   /typescript/4.8.4:
     resolution: {integrity: sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==}
     engines: {node: '>=4.2.0'}
     hasBin: true
+
+  /typescript/4.9.5:
+    resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
 
   /uc.micro/1.0.6:
     resolution: {integrity: sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==}
