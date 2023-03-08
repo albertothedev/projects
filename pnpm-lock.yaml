@@ -22,8 +22,8 @@ importers:
       '@types/bcryptjs': ^2.4.2
       '@types/jsonwebtoken': ^8.5.8
       '@types/node': 18.14.6
-      '@types/react': 18.0.15
-      '@types/react-dom': 18.0.6
+      '@types/react': 18.0.28
+      '@types/react-dom': 18.0.11
       '@types/react-redux': ^7.1.24
       axios: ^0.27.2
       bcryptjs: ^2.4.3
@@ -53,7 +53,7 @@ importers:
       next: 12.3.4_m5sxuueb27gk6ddc5gums6vtgq
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      react-redux: 8.0.5_rxpulxqxsibgdk5rs4llgxl6gy
+      react-redux: 8.0.5_epqzsux5te4oifde32lbaj3ih4
       redux: 4.2.0
       sanitize.css: 13.0.0
       sass: 1.56.1
@@ -62,8 +62,8 @@ importers:
       '@types/bcryptjs': 2.4.2
       '@types/jsonwebtoken': 8.5.9
       '@types/node': 18.14.6
-      '@types/react': 18.0.15
-      '@types/react-dom': 18.0.6
+      '@types/react': 18.0.28
+      '@types/react-dom': 18.0.11
       '@types/react-redux': 7.1.24
       stylelint: 14.16.1
       tsconfig: link:../../packages/tsconfig
@@ -77,8 +77,8 @@ importers:
       '@fortawesome/react-fontawesome': ^0.2.0
       '@types/node': 18.14.6
       '@types/nodemailer': ^6.4.4
-      '@types/react': 18.0.15
-      '@types/react-dom': 18.0.6
+      '@types/react': 18.0.28
+      '@types/react-dom': 18.0.11
       axios: ^0.27.2
       next: 12.3.4
       nodemailer: ^6.7.7
@@ -104,8 +104,8 @@ importers:
       sass: 1.56.1
     devDependencies:
       '@types/node': 18.14.6
-      '@types/react': 18.0.15
-      '@types/react-dom': 18.0.6
+      '@types/react': 18.0.28
+      '@types/react-dom': 18.0.11
       stylelint: 14.16.1
       tsconfig: link:../../packages/tsconfig
       typescript: 4.9.5
@@ -114,8 +114,8 @@ importers:
     specifiers:
       '@reduxjs/toolkit': ^1.8.3
       '@types/node': 18.14.6
-      '@types/react': 18.0.15
-      '@types/react-dom': 18.0.6
+      '@types/react': 18.0.28
+      '@types/react-dom': 18.0.11
       '@types/react-redux': ^7.1.24
       axios: ^0.27.2
       firebase-admin: ^11.0.0
@@ -137,14 +137,14 @@ importers:
       next: 12.3.4_m5sxuueb27gk6ddc5gums6vtgq
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      react-redux: 8.0.5_rxpulxqxsibgdk5rs4llgxl6gy
+      react-redux: 8.0.5_epqzsux5te4oifde32lbaj3ih4
       redux: 4.2.0
       sanitize.css: 13.0.0
       sass: 1.56.1
     devDependencies:
       '@types/node': 18.14.6
-      '@types/react': 18.0.15
-      '@types/react-dom': 18.0.6
+      '@types/react': 18.0.28
+      '@types/react-dom': 18.0.11
       stylelint: 14.16.1
       tsconfig: link:../../packages/tsconfig
       typescript: 4.9.5
@@ -829,7 +829,7 @@ packages:
     dependencies:
       immer: 9.0.16
       react: 18.2.0
-      react-redux: 8.0.5_rxpulxqxsibgdk5rs4llgxl6gy
+      react-redux: 8.0.5_epqzsux5te4oifde32lbaj3ih4
       redux: 4.2.0
       redux-thunk: 2.4.2_redux@4.2.0
       reselect: 4.1.7
@@ -909,7 +909,7 @@ packages:
   /@types/hoist-non-react-statics/3.3.1:
     resolution: {integrity: sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==}
     dependencies:
-      '@types/react': 18.0.25
+      '@types/react': 18.0.28
       hoist-non-react-statics: 3.3.2
 
   /@types/http-cache-semantics/4.0.1:
@@ -989,28 +989,21 @@ packages:
     resolution: {integrity: sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==}
     dev: false
 
-  /@types/react-dom/18.0.6:
-    resolution: {integrity: sha512-/5OFZgfIPSwy+YuIBP/FgJnQnsxhZhjjrnxudMddeblOouIodEQ75X14Rr4wGSG/bknL+Omy9iWlLo1u/9GzAA==}
+  /@types/react-dom/18.0.11:
+    resolution: {integrity: sha512-O38bPbI2CWtgw/OoQoY+BRelw7uysmXbWvw3nLWO21H1HSh+GOlqPuXshJfjmpNlKiiSDG9cc1JZAaMmVdcTlw==}
     dependencies:
-      '@types/react': 18.0.25
+      '@types/react': 18.0.28
 
   /@types/react-redux/7.1.24:
     resolution: {integrity: sha512-7FkurKcS1k0FHZEtdbbgN8Oc6b+stGSfZYjQGicofJ0j4U0qIn/jaSvnP2pLwZKiai3/17xqqxkkrxTgN8UNbQ==}
     dependencies:
       '@types/hoist-non-react-statics': 3.3.1
-      '@types/react': 18.0.25
+      '@types/react': 18.0.28
       hoist-non-react-statics: 3.3.2
       redux: 4.2.0
 
-  /@types/react/18.0.15:
-    resolution: {integrity: sha512-iz3BtLuIYH1uWdsv6wXYdhozhqj20oD4/Hk2DNXIn1kFsmp9x8d9QB6FnPhfkbhd2PgEONt9Q1x/ebkwjfFLow==}
-    dependencies:
-      '@types/prop-types': 15.7.5
-      '@types/scheduler': 0.16.2
-      csstype: 3.1.1
-
-  /@types/react/18.0.25:
-    resolution: {integrity: sha512-xD6c0KDT4m7n9uD4ZHi02lzskaiqcBxf4zi+tXZY98a04wvc0hi/TcCPC2FOESZi51Nd7tlUeOJY8RofL799/g==}
+  /@types/react/18.0.28:
+    resolution: {integrity: sha512-RD0ivG1kEztNBdoAK7lekI9M+azSnitIn85h4iOiaLjaTrMjzslhaqCGaI4IyCJ1RljWiLCEu4jyrLLgqxBTew==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
@@ -4705,7 +4698,7 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: false
 
-  /react-redux/8.0.5_rxpulxqxsibgdk5rs4llgxl6gy:
+  /react-redux/8.0.5_epqzsux5te4oifde32lbaj3ih4:
     resolution: {integrity: sha512-Q2f6fCKxPFpkXt1qNRZdEDLlScsDWyrgSj0mliK59qU6W5gvBiKkdMEG2lJzhd1rCctf0hb6EtePPLZ2e0m1uw==}
     peerDependencies:
       '@types/react': ^16.8 || ^17.0 || ^18.0
@@ -4728,8 +4721,8 @@ packages:
     dependencies:
       '@babel/runtime': 7.20.1
       '@types/hoist-non-react-statics': 3.3.1
-      '@types/react': 18.0.15
-      '@types/react-dom': 18.0.6
+      '@types/react': 18.0.28
+      '@types/react-dom': 18.0.11
       '@types/use-sync-external-store': 0.0.3
       hoist-non-react-statics: 3.3.2
       react: 18.2.0
