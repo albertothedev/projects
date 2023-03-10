@@ -22,7 +22,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@types/nodemailer": "^6.4.4",
     "axios": "^0.27.2",
-    "next": "12.3.4",
+    "next": "13.2.4",
     "nodemailer": "^6.7.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
