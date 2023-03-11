@@ -4,7 +4,7 @@
   "prConcurrentLimit": 0,
   "prHourlyLimit": 0,
   "timezone": "Europe/Berlin",
-  "schedule": ["after 12am and before 1am every day"],
+  "schedule": ["after 8pm and before 5am every day"],
   "separateMinorPatch": true,
   "assignees": ["albertothedev"]
 }
