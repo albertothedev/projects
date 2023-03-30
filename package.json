@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
-    "npm-check-updates": "^16.8.0",
+    "npm-check-updates": "^16.9.0",
     "stylelint-config-custom": "workspace:*",
     "prettier": "latest",
     "turbo": "latest"

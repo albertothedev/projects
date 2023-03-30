@@ -30,13 +30,13 @@
     "redux": "^4.2.1",
     "sanitize.css": "^13.0.0",
     "sass": "^1.60.0",
-    "sass-loader": "^13.2.1"
+    "sass-loader": "^13.2.2"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
     "@types/jsonwebtoken": "^8.5.8",
-    "@types/node": "18.15.10",
-    "@types/react": "18.0.29",
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.31",
     "@types/react-dom": "18.0.11",
     "@types/react-redux": "^7.1.25",
     "stylelint": "^14.14.0",
